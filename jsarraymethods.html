@@ -53,10 +53,62 @@
 			n.unshift("skyblue","grey");
 			console.log(n);
 
-			// Remove (take off from front)
+			// Remove value & index (take off from front)
 			n.shift();
 			n.shift();
 			console.log(n);
+
+			// Remove value & index (take off from end)
+			n.pop();
+			n.pop();
+			console.log(n);
+
+
+			// Remove only value
+			delete n[2];
+			console.log(n);
+			console.log(n.length);
+			console.log(n[2]);
+
+							// index,space(length)
+			let q = n.splice(1,5);
+			console.log(q);
+			console.log(q.length);
+
+
+
+			// Array Combine
+
+			const arr1 = ["aung aung","zaw zaw","maung maung","kyaw kyaw"];
+			const arr2 = ["su su","nu nu","yu yu","lu lu"];
+			const arr3 = [100,200,300];
+			console.log(arr1+arr2); // oki but changed to string
+
+			console.log(arr1.concat(arr2));
+			console.log(arr1.concat(arr1));
+			console.log(arr2.concat(arr1));
+			console.log(arr2.concat(arr3));
+
+
+			// Array Sorting (sort() doesn't work in number)
+			const arr4 = arr1.concat(arr2);
+			console.log(arr4);
+			console.log(arr4[3]);
+
+			// Sort A to Z 
+			console.log(arr4.sort());
+
+			// Reverse index number last to first (reverse() doesn't work in number)
+			console.log(arr4.reverse());
+
+
+			const arr5 = [700,200,100,50,150,10,600];
+
+
+
+
+
+
 
 
 
