@@ -1,0 +1,70 @@
+/*Selectors*/
+/*Element Selector*/
+/*ID Selector*/
+/*Class Selector*/
+/*Group Selector (,)*/
+
+
+/*Single Selector*/
+h1{
+	color:blue;
+}
+
+
+/*Group Selector*/
+h2,h3,h4{
+	color:green;
+}
+
+
+/*ID Selector*/
+
+/*#myself{
+	color:green;
+}
+
+#sakasa{
+	color:red;
+}
+
+span{
+	color:blue;
+}*/
+
+/*#myself,#sakasa,span{
+	color:red;
+}*/
+
+
+/*Class Selector*/
+
+.ph{
+	color:blue;
+
+}
+
+.f30{
+	font-size: 30px;
+}
+
+
+/*.phone{
+	color:red;
+}*/
+
+/*.ph,.phone{
+	color:green;
+}*/
+
+
+
+
+.hay{
+	color:red;
+	font-size: 20px;
+}
+
+
+.hi{
+	color: blue;
+}

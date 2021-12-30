@@ -1,0 +1,123 @@
+.firstdiv{
+	width: 200px;
+	height: 100px;
+	/*background-color: green;*/
+	/*background-color:#b58f05; */
+	/*background-color: rgba(183,65,127,1.00);*/
+
+	/*background: green;*/
+	/*background: #b58f05;*/
+	background: rgba(183,65,127,1.00);
+
+	color:blue;
+	font-size: 20px;
+}
+
+.seconddiv{
+	width: 300px;
+	height: 300px;
+
+	/*background-image:url("../img/cover/bg1.jpg");*/
+	background: url('../img/cover/bg1.jpg');
+
+	/*background-repeat: no-repeat;*/
+	/*background-repeat: repeat;*/
+	/*background-repeat: repeat-x;*/
+	background-repeat: repeat-y;
+
+	background-position: center;
+
+
+
+	/*border:2px;
+	border-style: solid;
+	border-color:red;*/
+
+	/*Short Hand*/
+			/*s s c*/
+	border:5px solid green;
+
+
+
+
+	color:white;
+}
+
+.divthree{
+	width: 300px;
+	height: 300px;
+	/*border:3px solid red;*/
+
+	color:white;
+	/*background:linear-gradient(red,orange,blue,green);*/
+	/*background-image:linear-gradient(red,orange,blue,green);*/
+	/*background:linear-gradient(#b09328,#cc185d);*/
+	/*background:linear-gradient(rgba(190,236,127,1.00),rgba(32,39,127,1.00));*/
+
+
+	/*background:linear-gradient(
+		80deg,
+		red,
+		orange,
+		green
+		);*/
+
+		/*background:radial-gradient(blue,red,orange);*/
+		/*background:radial-gradient(#c21984,#19c249,#c2bc19);*/
+		/*background:radial-gradient(rgba(209,217,127,1.00),rgba(37,58,127,1.00),rgba(223,62,127,1.00));*/
+
+
+		/*background: radial-gradient(
+		rgba(198,45,127,0),
+		rgba(44,212,127,1)
+		),
+		url('../img/cover/bg2.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;*/
+
+		/*background:linear-gradient(
+
+			red 70%,
+			orange 0%
+
+			);*/
+
+			background: linear-gradient(
+				40deg,
+				rgba(211,129,127,1.00) 30%,
+				rgba(237,31,127,1.00) 0% 70%,
+				blue 0%
+				);
+
+
+}
+
+.divfour{
+	width: 200px;
+	height:300px;
+	
+	color:white;
+
+	background-image:linear-gradient(
+		45deg,
+		rgba(198,45,127,0),
+		rgba(44,212,127,1)
+		) , url('../img/cover/bg2.jpg');
+
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+
+/*function
+name()*/
+
+/*single parameter function
+name(parameter)
+
+multi parameter function
+name(parameter,parameter)*/

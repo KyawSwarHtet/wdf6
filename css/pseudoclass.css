@@ -1,0 +1,150 @@
+/*Pseudo Class (:)*/
+
+.div1{
+	width:300px;
+	height: 100px;
+	background-color: green;
+}
+
+
+/*.div1:first-child{
+	width: 300px;
+	height: 100px;
+	background-color: orange;
+	color:#fff;
+}*/
+
+
+/*
+.div1:first-of-type{
+
+	width: 300px;
+	height: 100px;
+	background-color: red;
+	color:#fff;
+
+}
+*/
+
+
+/*.div1:last-child{
+	width: 300px;
+	height: 100px;
+	background-color: red;
+	color:#fff;
+}
+*/
+
+
+/*.div1:last-of-type{
+	width: 300px;
+	height: 100px;
+	background-color: blue;
+	color:#fff;
+}*/
+
+
+/*.div1:nth-of-type(2){
+	width: 300px;
+	height: 100px;
+	background-color: blue;
+	color:#fff;
+}*/
+
+/*.div1:nth-of-type(even){
+	width: 300px;
+	height: 100px;
+	background-color: blue;
+	color:#fff;
+}*/
+
+/*.div1:nth-of-type(odd){
+	width: 300px;
+	height: 100px;
+	background-color: blue;
+	color:#fff;
+}*/
+
+
+/*.div1:nth-child(2){
+	width: 300px;
+	height: 100px;
+	background-color: blue;
+	color:#fff;
+}*/
+
+
+/*.div1:nth-child(odd){
+	width: 300px;
+	height: 100px;
+	background-color: blue;
+	color:#fff;
+}*/
+
+
+/*.div1:nth-child(even){
+
+	width: 300px;
+	height: 100px;
+	background-color: blue;
+	color:#fff;
+
+}*/
+
+
+
+
+
+
+
+
+/*.div1:first-child{
+	width: 300px;
+	height: 100px;
+	background-color: red;
+	color:#fff;
+}*/
+
+
+.div1:first-of-type{
+	width: 300px;
+	height: 100px;
+	background-color: red;
+	color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ordinal number
+
+1st
+2nd
+3rd
+4th
+5........ nth
+
+
+*/

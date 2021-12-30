@@ -1,0 +1,140 @@
+<html>
+<head>
+	<title>Form Elements</title>
+	</head>
+	<body>
+
+		<h1>Form Tag</h1>
+
+		<fieldset>
+
+			<legend align="left">This is sample form &copy;&#x000A5;&#x000A5;&raquo;</legend>
+
+		<form action="" method="" enctype="multipart/form-data">
+
+			<label for="firstname">First Name</label>
+			<input type="text" name="firstname" id="firstname" class="" placeholder="Enter your first name" minlength="4" maxlength="6" autocomplete="off" autofocus/>
+
+			<br/>
+
+			<label for="lastname">Last Name</label>
+			<input type="text" name="lastname" id="lastname" class="" placeholder="Enter your last name" disabled/>
+
+			<br/>
+
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" class=""  placeholder="Enter your password" minlength="4" readonly />
+
+			<br/>
+
+			<label for="age">Age</label>
+			<input type="number" name="age" id="age" class="" placeholder="Enter your age" min="0" max="999"/>
+
+			<br/>
+
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" class="" placeholder="Enter your email" autocomplete="off"  required />
+
+			<br/>
+
+			<label>Gender</label>
+			<input type="radio" name="gender" id="genderm" class="" value="1"  /><label for="genderm">Male</label>
+			<input type="radio" name="gender" id="genderf" class="" value="0" checked /><label for="genderf">Female</label>
+			<input type="radio" name="gender" id="gendero" class="" value="2" /><label for="gendero">Other</label>
+
+			<br/>
+
+			<label>Salary</label>
+
+			<input type="radio" name="salary" id="salaryc" class="" value="1" required/><label for="salaryc">Cash</label>
+			<input type="radio" name="salary" id="salarym" class="" value="0" /><label for="salarym">Mobile Banking</label>
+
+			<br/>
+
+			<label>Choose your fav color</label>
+			<input type="checkbox" name="color" id="colorred" class="" value="1"   /><label for="colorred">Red</label>
+			<input type="checkbox" name="color" id="colorblack" class="" value="2"  /><label for="colorblack">Black</label>
+			<input type="checkbox" name="color" id="colorblue" class="" value="3"  /><label for="colorblue">Blue</label>
+			<input type="checkbox" name="color" id="colorgreen" class="" value="4"   /><label for="colorgreen">Green</label>
+
+			<br/>
+
+			<label for="country">Citizen</label>
+
+			<select name="country" id="country" class="" required>
+				<option selected disabled>Choose Your Country</option>
+				<option value="mm">Myanmar</option>
+				<option value="th">Thailand</option>
+				<option value="slk">Srilanka</option>
+				<option value="indo">Indonesia</option>
+				<option value="laos">Laos</option>
+			</select>
+
+			<br/>
+
+			<label for="role">Role</label>
+			<select name="role" id="role" class="" multiple>
+				<option value="1">Manager</option>
+				<option value="2">Editor</option>
+				<option value="3">Supervisor</option>
+				<option value="4">Sales</option>
+			</select>
+
+			<br/>
+
+			<label for="dob">DOB</label>
+			<input type="date" name="dob" id="dob" class="" />
+
+			<br/>
+
+			<label for="bt">Booking Time</label>
+			<input type="time" name="bt" id="bt" class="" />
+
+			<br/>
+
+			<label for="apt">Appoint</label>
+			<input type="datetime-local" name="apt" id="apt" class="" />
+
+			<br/>
+
+			<label for="volume">Volume</label>
+			<input type="range" name="volume" id="volume" class="" min="0"  max="100" value="0" step="20" />
+
+			<br/>
+
+			<label for="bio">Bio</label>
+			<textarea name="bio" id="bio" class="" rows="10" placeholder="Write something...."></textarea>
+
+			<br/>
+
+			<label for="nrc">NRC</label>
+			<input type="file" name="nrc" id="nrc" class="" multiple />
+
+			<br/>
+
+			<input type="hidden" name="test" id="test" class="" />
+
+			<br/> <br/>
+
+
+			<input type="reset" name="reset" id="reset" class="" value="Cancel" />
+			<input type="submit" name="register" id="register" class="" value="Register" />
+			<button type="submit" name="login" id="login" class="" disabled>Login</button>
+
+
+
+		</form>
+
+
+	</fieldset>
+
+		
+
+	</body>
+</html>
+
+
+<!-- 
+Stand Alone Attribute 
+selected disabled checked multiple required autofocus readonly
+-->

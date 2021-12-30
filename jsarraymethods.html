@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Methods (Default Functions)</title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+			
+
+			// Array Methods
+			let arrcolors = ["red","black","orange","tomato","violet"];
+
+			console.log(arrcolors);
+			console.log(arrcolors.length);
+			console.log(typeof arrcolors.length);
+
+
+			console.log(arrcolors[3]);
+			console.log(arrcolors.indexOf("violet"));
+
+			// Character Array in JS
+			let myfriend = "Aung Kyaw Kyaw";
+
+			console.log(Array.isArray(arrcolors)); //result = true
+			console.log(Array.isArray(myfriend)); //result = false
+
+
+			console.log(arrcolors);
+			console.log("Array to String by tostring = " +  arrcolors.toString());
+			console.log("Array to String by join = " +  arrcolors.join("*"));
+			console.log(arrcolors);
+
+
+			const n = ["red","black","green","silver"];
+			console.log(n);
+
+
+			n[1] = "pink";
+			n[4] = "blue";
+			console.log(n);
+			console.log(n[4]);
+
+
+			// Add new value to array ( addon to the end )
+			n.push("gold");
+			n.push("orange");
+			n.push("violet","white");
+			console.log(n);
+
+			//Add new value to array ( addon to front )
+			n.unshift("tomato");
+			n.unshift("skyblue","grey");
+			console.log(n);
+
+			// Remove (take off from front)
+			n.shift();
+			n.shift();
+			console.log(n);
+
+
+
+
+
+		</script>
+	</body>
+</html>
+
