@@ -2,8 +2,74 @@
 <html>
 <head>
 	<title>Regular Function</title>
+
+	<style type="text/css">
+
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			height: 100vh;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			margin: 0;
+			overflow: hidden;
+		}
+
+		.box{
+			width:300px;
+			background-color: #f4f4f4;
+			padding: 10px;
+			box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+		}
+
+		label{
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		.form-control{
+			width: 100%;
+			display: block;
+			padding:5px;
+			margin-bottom: 10px;
+		}
+
+		.btn{
+			width: 100%;
+			font-size: 16px;
+			background-color: darkblue;
+			color: #fff;
+			border: none;
+			padding: 5px;
+		}
+	</style>
+
+
+
+
 </head>
 <body>
+
+	<div class="box">
+
+		<h3>Show Name = <span id="replacename">Test</span></h3>
+
+		<label for="firstname">First Name</label>
+		<input type="text" name="firstname" id="firstname" class="form-control" autocomplete="off" autofocus />
+
+		<label for="lastname">Last Name</label>
+		<input type="text" name="lastname" id="lastname" class="form-control" autocomplete="off" />
+
+		<button type="button" class="btn" onclick="getdata()">Get Name</button>
+
+	</div>
+
+
 
 	<script type="text/javascript">
 		// Function
@@ -215,7 +281,7 @@
 
 
 
-	// (i) Multi Parameter Funciton
+	// Multi Parameter Funciton
 
 	// function multifun1(x,y,z){
 	// 	console.log(`x value is ${x} , y value is ${y} , z value is ${z}`);
@@ -239,13 +305,99 @@
 	}
 
 	console.log(multifun2(10,20,30));
+
+// ----------------------------------------------------------
+
+	// 3. Constructor Function (String Structure)
+
+	const confunone = new Function("j","k","l","return j+k+l");
+
+	console.log(confunone(10,20));
+	console.log(confunone(10,20,30)); //result 60
+	console.log(typeof confunone(10,20,30));
+
+	console.log(confunone("10","20","30")); //result 102030
+	console.log(typeof confunone("10","20","30"));
+
+	console.log(confunone("aung aung","maung maung","kyaw kyaw"));
+
+
+// ----------------------------------------------------------
+
+
+	// 4. Nameless Function (Anonymous Function);
+
+	let annfunone = function (name,color){
+		console.log(`My name is ${name}. I love ${color} color.`);
+	}
+
+	annfunone("aung aung","black");
+
+
+// ----------------------------------------------------------
+
+	// 5. Seft Invoking Function
+
+	(function(){
+		console.log("Save Myanmar");
+	})();
+
+
+	(function(name){
+		console.log(`My name is ${name}`);
+	})('tun tun');
+
+
+// ----------------------------------------------------------
+
+
+ function getdata(){
+ 	// console.log('hay i am working');
+
+ 	// var getfirstname = document.getElementById("firstname").value;
+ 	// var getlastname = document.getElementById("lastname").value;
+ 	// // console.log(getfirstname,getlastname); 
+
+ 	// const getreplacename = document.getElementById("replacename");
+ 	// // console.log(getreplacename);
+
+ 	// // getreplacename.innerText = `${getfirstname} ${getlastname}`;
+ 	// // getreplacename.textContent = `${getfirstname} ${getlastname}`;
+ 	// // getreplacename.innerHTML = `${getfirstname} ${getlastname}`;
+
+ 	// document.getElementById("replacename").innerText = `${getfirstname} ${getlastname}`;
+
+ 	// document.getElementById("firstname").value = "";
+ 	// document.getElementById("lastname").value = "";
+
+
+ 	// document.getElementById("firstname").focus();
+
+
+
+
+
+ 	var getfirstname = document.getElementById("firstname");
+ 	var getlastname = document.getElementById("lastname");
+ 	// console.log(getfirstname,getlastname); 
+
+
+ 	const getreplacename = document.getElementById("replacename");
+ 	
+ 	getreplacename.innerText = `${getfirstname.value} ${getlastname.value}`;
+
+ 	getfirstname.value = "";
+ 	getlastname.value = "";
+
+ 	getfirstname.focus();
+
+ }
+
+
+
 	
 
-
-
-
-28FN
-
+	
 
 
 
